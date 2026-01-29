@@ -12,11 +12,11 @@ If you add any areas I've missed please do submit a PR or tag me in the Discord 
 ### Preview
 
 #### Dark Mode
-<img width="1704" height="1367" alt="image" src="https://github.com/user-attachments/assets/b75e1757-3b8b-4e77-9d25-3d52b7389287" />
-
+<img width="1714" height="1377" alt="image" src="https://github.com/user-attachments/assets/5d9b9da6-7d67-441c-8b8b-7faed4e04629" />
 
 #### Light Mode
-<img width="1703" height="1366" alt="image" src="https://github.com/user-attachments/assets/0bfac406-d90d-445d-977a-3e7cecc68df9" />
+<img width="1715" height="1378" alt="image" src="https://github.com/user-attachments/assets/2636b535-140a-4a4a-820b-bd07335aa749" />
+
 
 
 
