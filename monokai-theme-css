@@ -144,9 +144,12 @@ html[data-theme="basic-dark-monokai-pro"] {
     /* ------------------------------------------- */
     --ed-quote-border-color: #a8a0ee;
 
-    --ed-code-border: transparent;
-    --ed-code-bg: rgba(44, 41, 45, 0.4);
-
+    --ed-container-border-color: rgba(92, 99, 112, 0.25);  /* #5C6370 */
+    --ed-container-bg-color:     rgba(171, 178, 191, 0.03); /* #ABB2BF */
+    
+    --ed-code-bg:                rgba(92, 99, 112, 0.25);  /* #5C6370 */
+    --ed-code-border:            rgba(171, 178, 191, 0.08); /* #ABB2BF */
+  
     /* Inline code */
     .lineitem-code {
         background-color: var(--color-bg-200) !important;
@@ -358,8 +361,11 @@ html[data-theme="basic-white-monokai-pro"] {
     /* ------------------------------------------- */
     --ed-quote-border-color: #a8a0ee;
 
-    --ed-code-border: transparent;
-    --ed-code-bg: rgba(238, 234, 229, 0.5);
+    --ed-container-border-color: rgba(171, 178, 191, 0.25); /* #ABB2BF */
+    --ed-container-bg-color:     rgba(44, 41, 45, 0.03);    /* #2C292D */
+    
+    --ed-code-bg:                rgba(171, 178, 191, 0.25); /* #ABB2BF */
+    --ed-code-border:            rgba(44, 41, 45, 0.08);    /* #2C292D */
 
     /* Inline code */
     .lineitem-code {
