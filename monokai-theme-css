@@ -1,0 +1,442 @@
+/*
+* Monokai Pro (Obsidian-inspired) Theme for Thymer
+* Palette derived from the provided Obsidian Monokai Pro-style theme CSS
+* Variants: Monokai Pro (Dark) and Monokai Pro (Light)
+*
+* Key Palette (from the theme CSS):
+* - Base (Dark): #1e1f2b / #282a3a / #3a3d4b
+* - Base (Light): #fdf9f3 / #eeeae5 / #ffffff
+* - Accents: Yellow #fad872, Blue #61afef, Aqua #8dd9e6, Purple #a8a0ee,
+*            Green #b3d97e, Orange #f19d6d, Red #ef6f89
+* - Grays: #5C6370, #abb2bf, #2c292d
+*/
+
+/* ------------------------------------------- */
+/* Monokai Pro - Deep Dark                     */
+/* ------------------------------------------- */
+html[data-theme="basic-dark-monokai-pro"] {
+    color-scheme: dark;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Soft Green                   */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #b3d97e;
+    }
+
+    --text-base-size: 16px;
+  
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Monokai Bases       */
+    /* ------------------------------------------- */
+    --color-bg-50: #5C6370;
+    --color-bg-100: #3a3d4b;
+    --color-bg-150: #282a3a;
+    --color-bg-200: #282a3a;
+    --color-bg-300: #282a3a;
+    --color-bg-400: #1e1f2b;
+    --color-bg-500: #1e1f2b;
+    --color-bg-600: #1e1f2b;
+    --color-bg-700: #282a3a;
+    --color-bg-800: #282a3a; /* Sidebar - background light */
+    --color-bg-900: #1e1f2b;  /* Main window - main background */
+    --color-bg-950: #000000;
+    --color-bg-500-50: rgba(30, 31, 43, 0.5);
+    --color-bg-950-50: rgba(0, 0, 0, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Warm Yellow Accent     */
+    /* ------------------------------------------- */
+    --color-primary-50: #ffffff;
+    --color-primary-100: #fdf9f3;
+    --color-primary-200: #fdf9f3;
+    --color-primary-300: #fad872;
+    --color-primary-400: #fad872; /* Yellow Accent */
+    --color-primary-500: #f19d6d;
+    --color-primary-600: #f19d6d;
+    --color-primary-700: #ef6f89;
+    --color-primary-800: #ef6f89;
+    --color-primary-900: #a8a0ee;
+    --color-primary-950: #1e1f2b;
+    --color-primary-400-70: rgba(250, 216, 114, 0.7);
+    --color-primary-950-20: rgba(30, 31, 43, 0.2);
+    --color-primary-text-100: #1e1f2b;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Bright Foreground        */
+    /* ------------------------------------------- */
+    --color-text-50: #ffffff;
+    --color-text-100: #ffffff;
+    --color-text-200: #abb2bf;
+    --color-text-300: #abb2bf;
+    --color-text-400: #abb2bf;
+    --color-text-500: #5C6370;
+    --color-text-600: #5C6370;
+    --color-text-700: #fad872;
+    --color-text-800: #abb2bf;
+    --color-text-900: #282a3a;
+    --color-text-950: #5C6370;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Monokai Accents       */
+    /* ------------------------------------------- */
+    --text-ok: #b3d97e;
+    --text-status-online: #b3d97e;
+    --text-warning: #fad872;
+    --text-error: #ef6f89;
+    --bg-alert: #ef6f89;
+    --fg-alert: #ffffff;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Themed         */
+    /* ------------------------------------------- */
+    --link-color: #61afef;
+    --link-hover-color: #8dd9e6;
+    --ed-link-color: #61afef;
+    --ed-link-hover-color: #8dd9e6;
+
+    --ed-hashtag-color: #a8a0ee;
+    --ed-hashtag-bg: rgba(168, 160, 238, 0.15);
+
+    --ed-mention-color: #8dd9e6;
+    --ed-mention-bg: rgba(141, 217, 230, 0.15);
+    --ed-mention-hover-bg: rgba(141, 217, 230, 0.25);
+    --ed-mention-hover-color: #61afef;
+
+    --ed-datetime-color: #f19d6d;
+    --ed-datetime-bg: rgba(241, 157, 109, 0.15);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Yellow             */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #fad872;
+    --ed-check-div-hover-border: #61afef;
+    --ed-check-done-bg: #fad872;
+    --ed-check-done-fg: #1e1f2b;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #5C6370 !important;
+        text-decoration-color: #5C6370 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                       */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(40, 42, 58, 0.8);
+    --selection-fg: #ffffff;
+    --ed-selection-self-bg: rgba(40, 42, 58, 0.8);
+    --ed-selection-blurred-bg: rgba(40, 42, 58, 0.5);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #fad872 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #fad872;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Dark Containers         */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #a8a0ee;
+
+    --ed-code-border: transparent;
+    --ed-code-bg: rgba(44, 41, 45, 0.4);
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #b3d97e !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(168, 160, 238, 0.1);
+    --ed-block-note-border: #a8a0ee;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Dark Interface         */
+    /* ------------------------------------------- */
+    --cards-bg: #1e1f2b;
+    --cards-hover-bg: #282a3a;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #fad872;
+    --side-fg-active-focus: #1e1f2b;
+    --sidebar-bg-hover: #282a3a;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #1e1f2b;
+    --cmdpal-selected-bg-color: #fad872;
+    --cmdpal-selected-fg-color: #1e1f2b;
+    --cmdpal-hover-bg-color: #282a3a;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #1e1f2b;
+    --input-border-color: transparent;
+    --input-border-focus: 1px solid #fad872;
+    --input-border-shadow: 0 0 8px rgba(250, 216, 114, 0.4);
+
+    --button-primary-bg-color: #fad872;
+    --button-primary-fg-color: #1e1f2b;
+    --button-primary-bg-hover-color: #61afef;
+    --button-bg-color: #282a3a;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #3a3d4b;
+
+    --color-shadow: rgba(0, 0, 0, 0.5);
+    --color-shadow-cards: 0 4px 6px rgba(0, 0, 0, 0.4);
+    --color-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.5);
+
+    --logo-color: #fad872;
+    --logo-glow-shadow:
+        0 0 15px rgba(250, 216, 114, 0.4),
+        0 0 30px rgba(250, 216, 114, 0.2);
+
+    /* Enums - Monokai Palette */
+    --enum-red-bg: rgba(239, 111, 137, 0.25);
+    --enum-red-fg: #ef6f89;
+    --enum-orange-bg: rgba(241, 157, 109, 0.25);
+    --enum-orange-fg: #f19d6d;
+    --enum-yellow-bg: rgba(250, 216, 114, 0.25);
+    --enum-yellow-fg: #fad872;
+    --enum-green-bg: rgba(179, 217, 126, 0.25);
+    --enum-green-fg: #b3d97e;
+    --enum-cyan-bg: rgba(141, 217, 230, 0.25);
+    --enum-cyan-fg: #8dd9e6;
+    --enum-blue-bg: rgba(97, 175, 239, 0.25);
+    --enum-blue-fg: #61afef;
+    --enum-purple-bg: rgba(168, 160, 238, 0.25);
+    --enum-purple-fg: #a8a0ee;
+    --enum-pink-bg: rgba(239, 111, 137, 0.25);
+    --enum-pink-fg: #ef6f89;
+
+    --prop-border-focused: #1e1f2b;
+    --prop-bg-focused: rgba(250, 216, 114, 0.3);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #fad872;
+    --ed-drag-handle-hover-border: #61afef;
+
+    --gradient-scrim: none;
+}
+
+/* ------------------------------------------- */
+/* Monokai Pro - Warm Light                    */
+/* ------------------------------------------- */
+html[data-theme="basic-white-monokai-pro"] {
+    color-scheme: light;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Soft Green                   */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #b3d97e;
+    }
+
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Cream & Light Gray  */
+    /* ------------------------------------------- */
+    --color-bg-50: #5C6370;
+    --color-bg-100: #abb2bf;
+    --color-bg-150: #eeeae5;
+    --color-bg-200: #fdf9f3;
+    --color-bg-300: #ffffff;
+    --color-bg-400: #fdf9f3;
+    --color-bg-500: #fdf9f3;
+    --color-bg-600: #fdf9f3;
+    --color-bg-700: #ffffff;
+    --color-bg-800: #eeeae5; /* Sidebar - light */
+    --color-bg-900: #fdf9f3; /* Main window - warm light */
+    --color-bg-950: #ffffff;
+    --color-bg-500-50: rgba(253, 249, 243, 0.5);
+    --color-bg-950-50: rgba(255, 255, 255, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - Deep Ink Accent        */
+    /* ------------------------------------------- */
+    --color-primary-50: #ffffff;
+    --color-primary-100: #eeeae5;
+    --color-primary-200: #abb2bf;
+    --color-primary-300: #5C6370;
+    --color-primary-400: #2c292d; /* Ink Accent */
+    --color-primary-500: #1e1f2b;
+    --color-primary-600: #1e1f2b;
+    --color-primary-700: #1e1f2b;
+    --color-primary-800: #1e1f2b;
+    --color-primary-900: #000000;
+    --color-primary-950: #000000;
+    --color-primary-400-70: rgba(44, 41, 45, 0.7);
+    --color-primary-950-20: rgba(0, 0, 0, 0.2);
+    --color-primary-text-100: #fdf9f3;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Ink & Warm Grays         */
+    /* ------------------------------------------- */
+    --color-text-50: #2c292d;
+    --color-text-100: #2c292d;
+    --color-text-200: #3a3d4b;
+    --color-text-300: #3a3d4b;
+    --color-text-400: #5C6370;
+    --color-text-500: #5C6370;
+    --color-text-600: #5C6370;
+    --color-text-700: #2c292d;
+    --color-text-800: #2c292d;
+    --color-text-900: #fdf9f3;
+    --color-text-950: #5C6370;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - Monokai Accents       */
+    /* ------------------------------------------- */
+    --text-ok: #b3d97e;
+    --text-status-online: #b3d97e;
+    --text-warning: #fad872;
+    --text-error: #ef6f89;
+    --bg-alert: #ef6f89;
+    --fg-alert: #fdf9f3;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Themed         */
+    /* ------------------------------------------- */
+    --link-color: #f19d6d;
+    --link-hover-color: #61afef;
+    --ed-link-color: #f19d6d;
+    --ed-link-hover-color: #61afef;
+
+    --ed-hashtag-color: #a8a0ee;
+    --ed-hashtag-bg: rgba(168, 160, 238, 0.1);
+
+    --ed-mention-color: #8dd9e6;
+    --ed-mention-bg: rgba(141, 217, 230, 0.1);
+    --ed-mention-hover-bg: rgba(141, 217, 230, 0.2);
+    --ed-mention-hover-color: #61afef;
+
+    --ed-datetime-color: #f19d6d;
+    --ed-datetime-bg: rgba(241, 157, 109, 0.1);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - Green Done         */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #5C6370;
+    --ed-check-div-hover-border: #abb2bf;
+    --ed-check-done-bg: #b3d97e;
+    --ed-check-done-fg: #fdf9f3;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #5C6370 !important;
+        text-decoration-color: #5C6370 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                       */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(97, 175, 239, 0.25);
+    --selection-fg: #2c292d;
+    --ed-selection-self-bg: rgba(97, 175, 239, 0.25);
+    --ed-selection-blurred-bg: rgba(97, 175, 239, 0.12);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #2c292d 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #2c292d;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Light Containers        */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #a8a0ee;
+
+    --ed-code-border: transparent;
+    --ed-code-bg: rgba(238, 234, 229, 0.5);
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #b3d97e !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(168, 160, 238, 0.08);
+    --ed-block-note-border: #a8a0ee;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Light Interface        */
+    /* ------------------------------------------- */
+    --cards-bg: #fdf9f3;
+    --cards-hover-bg: #eeeae5;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #2c292d;
+    --side-fg-active-focus: #fdf9f3;
+    --sidebar-bg-hover: #eeeae5;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #fdf9f3;
+    --cmdpal-selected-bg-color: #2c292d;
+    --cmdpal-selected-fg-color: #fdf9f3;
+    --cmdpal-hover-bg-color: #eeeae5;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #fdf9f3;
+    --input-border-color: transparent;
+    --input-border-focus: 1px solid #2c292d;
+    --input-border-shadow: 0 0 8px rgba(44, 41, 45, 0.3);
+
+    --button-primary-bg-color: #2c292d;
+    --button-primary-fg-color: #fdf9f3;
+    --button-primary-bg-hover-color: #5C6370;
+    --button-bg-color: #ffffff;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #eeeae5;
+
+    --color-shadow: rgba(0, 0, 0, 0.12);
+    --color-shadow-cards: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --color-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+    --logo-color: #2c292d;
+    --logo-glow-shadow:
+        0 0 15px rgba(44, 41, 45, 0.25),
+        0 0 30px rgba(44, 41, 45, 0.15);
+
+    /* Enums - Monokai Palette */
+    --enum-red-bg: rgba(239, 111, 137, 0.15);
+    --enum-red-fg: #ef6f89;
+    --enum-orange-bg: rgba(241, 157, 109, 0.15);
+    --enum-orange-fg: #f19d6d;
+    --enum-yellow-bg: rgba(250, 216, 114, 0.15);
+    --enum-yellow-fg: #fad872;
+    --enum-green-bg: rgba(179, 217, 126, 0.15);
+    --enum-green-fg: #b3d97e;
+    --enum-cyan-bg: rgba(141, 217, 230, 0.15);
+    --enum-cyan-fg: #8dd9e6;
+    --enum-blue-bg: rgba(97, 175, 239, 0.15);
+    --enum-blue-fg: #61afef;
+    --enum-purple-bg: rgba(168, 160, 238, 0.15);
+    --enum-purple-fg: #a8a0ee;
+    --enum-pink-bg: rgba(239, 111, 137, 0.15);
+    --enum-pink-fg: #ef6f89;
+
+    --prop-border-focused: #fdf9f3;
+    --prop-bg-focused: rgba(44, 41, 45, 0.15);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #2c292d;
+    --ed-drag-handle-hover-border: #5C6370;
+
+    --gradient-scrim: none;
+}
