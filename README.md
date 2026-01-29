@@ -11,6 +11,12 @@ If you add any areas I've missed please do submit a PR or tag me in the Discord 
 
 ### Preview
 
+#### Dark Mode
+<img width="1704" height="1367" alt="image" src="https://github.com/user-attachments/assets/b75e1757-3b8b-4e77-9d25-3d52b7389287" />
+
+
+#### Light Mode
+<img width="1703" height="1366" alt="image" src="https://github.com/user-attachments/assets/0bfac406-d90d-445d-977a-3e7cecc68df9" />
 
 
 
